@@ -43,7 +43,7 @@ public class TripTest {
 
 	@Test(expected = IllegalArgumentException.class)
 	public void testPhotoWithEmptyDescription() {
-		Trip theTrip = new Trip("Wakacje 2017", null);
+		Trip theTrip = new Trip("Wakacje 2017", "");
 	}
 
 	@Test

@@ -5,6 +5,9 @@ public class Photo {
 	private String comment;
 
 	public Photo(String comment) {
+		if (comment == null || comment.equals("")) {
+			throw new IllegalArgumentException();
+		}
 		this.comment = comment;
 	}
 
